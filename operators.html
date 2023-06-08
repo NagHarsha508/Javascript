@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <label for="">Name: </label>
+    <input type="text" name1="Java" id="name"> 
+    <label for="">Password: </label>
+    <input type="text" name2="Script" id="pw">
+    </div>
+    <div>
+    <button onClick="onClick()" style="margin: 10px">Verify</button>
+</div>
+    <p id="output"></p>
+
+    <script>
+        function onClick() {
+            name1 = document.getElementById('name').value;
+            name2 = document.getElementById('pw').value;
+            const output = (name1 === name2) ? 'values are matched' : 'values are not matched';
+            document.getElementById('output').innerHTML = output;
+        }
+    </script>
+</body>
+</html>

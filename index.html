@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="first">This is first timer: 12:31:32</h1>
+    <p>Indian Time</p>
+
+    <script>
+
+        function upadateTime() {
+            var now = new Date();
+            var time = now.toLocaleTimeString();
+            document.getElementById('first').innerHTML = time;
+            
+        }
+        setInterval(upadateTime, 1000); 
+        
+        
+        var name = "Javascript"
+        console.log("variable name is", name);
+        if(name == Javascript)
+        alert(name);
+        document.write('next line')
+        document.getElementById('first').style.backgroundColor = "black";
+        document.getElementById('first').innerHTML = "New heading";
+        document.getElementById('first').style.color= "red";
+        
+        var a = ["name1", "name2", "name3"];
+        a[1] = 'Hello'
+        console.log(a[0])
+        console.log(a[1])
+        console.log(a[2]);
+        document.write(a[0])
+        document.write(a[1])
+        document.write(a[2]);
+
+        var address = {'firstName': 'aa', lastName: 'bb', address:'add1', address:'add2'}
+        console.log('address.firstName', address.firstName);
+        
+    </script>
+</body>
+</html>

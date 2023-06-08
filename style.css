@@ -1,0 +1,22 @@
+
+body{
+    background-color: rgb(109, 109, 184);
+    height: 100vh;
+}
+
+#first{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    margin: 0;
+
+}
+/* 
+body p{
+    display: flex;
+    color: rgb(193, 33, 33);
+    justify-content: center;
+    text-align: center;
+
+} */
